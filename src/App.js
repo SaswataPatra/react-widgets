@@ -1,22 +1,36 @@
 import Button from "./components/Button";
+import { HiAnnotation } from "react-icons/hi";
 import "./index.css";
 function App(params) {
   return (
     <div>
       <div>
-        <Button primary rounded outline> Click me !</Button>
+        <Button primary rounded outline className="ml-5">
+          <HiAnnotation></HiAnnotation>Click me !
+        </Button>
       </div>
       <div>
-        <Button secondary outline> save me !</Button>
+        <Button secondary outline>
+          <HiAnnotation></HiAnnotation>
+          save me !
+        </Button>
       </div>
       <div>
-        <Button success outline> success</Button>
+        <Button success outline>
+          <HiAnnotation></HiAnnotation>
+          success
+        </Button>
       </div>
       <div>
-        <Button warning> download</Button>
+        <Button warning>
+          <HiAnnotation></HiAnnotation> download
+        </Button>
       </div>
       <div>
-        <Button danger> danger !</Button>
+        <Button danger>
+          {" "}
+          <HiAnnotation></HiAnnotation>danger !
+        </Button>
       </div>
     </div>
   );

@@ -10,8 +10,9 @@ function Button({
   danger,
   outline,
   rounded,
+  ...rest
 }) {
-  let baseClassName = className("px-3 py-1.5 my-4 text-white border", {
+  let baseClassName = className(rest.className,"flex items-center mr-1 px-3 py-1.5 my-4 text-white border", {
     "bg-blue-500 border-blue-500": primary,
     "bg-stone-950 border-zinc-950": secondary,
     "bg-green-500 border-green-500": success,
@@ -27,7 +28,7 @@ function Button({
 
   });
   baseClassName = twMerge(baseClassName);
-  return <button className={baseClassName}>{children}</button>;
+  return <button {...rest} className={baseClassName} >{children}</button>;
 }
 Button.propTypes = {
   primary: PropTypes.bool,
