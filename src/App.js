@@ -4,13 +4,13 @@ function App(params) {
   return (
     <div>
       <div>
-        <Button primary> Click me !</Button>
+        <Button primary rounded outline> Click me !</Button>
       </div>
       <div>
-        <Button secondary> save me !</Button>
+        <Button secondary outline> save me !</Button>
       </div>
       <div>
-        <Button success> success</Button>
+        <Button success outline> success</Button>
       </div>
       <div>
         <Button warning> download</Button>
